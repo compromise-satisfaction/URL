@@ -1,47 +1,105 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-</head>
-<body>
-<p>
-</p>
-<form method="post" action="https://script.google.com/macros/s/AKfycbz_odtxLBSSB7eARxIwh5ELIeEExCIWlkBfIBHSGt_njcl3IPo/exec">
-<p>
-<label><input type="text" name="Card"> カード名</label>
-</p>
-<p>
-<label><input type="text" name="A_E"> 属性/効果</label>
-</p>
-<p>
-<label><input type="text" name="Levels"> レベル/ランク/リンク</label>
-</p>
-<p>
-<label><input type="text" name="Scale"> ペンデュラムスケール</label>
-</p>
-<p>
-<label><input type="text" name="P_E"> ペンデュラム効果</label>
-</p>
-<p>
-<label><input type="text" name="Race"> 種族</label>
-</p>
-<p>
-<label><input type="text" name="Other"> その他項目</label>
-</p>
-<p>
-<label><input type="text" name="ATK"> 攻撃力</label>
-</p>
-<p>
-<label><input type="text" name="DEF"> 守備力</label>
-</p>
-<p>
-<label><input type="text" name="Card_T"> カードテキスト</label>
-</p>
-<p>
-</p>
-<p>
-<input type="submit" value="検索">
-</p>
+<form action="https://script.google.com/macros/s/AKfycbz_odtxLBSSB7eARxIwh5ELIeEExCIWlkBfIBHSGt_njcl3IPo/exec" method="post">
+<p>魂のカードや魂の造形家でサーチ出来る</p>
+<p>攻撃力・守備力の合計を検索する機能が見つからなかったので</p>
+<p>それを含めたカード検索機を作りました。</p>
+<p>カード名 <input name="Card_Name" type="text" /></p>
+<p>属性/効果 <select name="A_E">
+<option>未選択</option>
+<option>モンスター</option>
+<option>魔法</option>
+<option>罠</option>
+<option>闇属性</option>
+<option>光属性</option>
+<option>地属性</option>
+<option>水属性</option>
+<option>炎属性</option>
+<option>風属性</option>
+<option>神属性</option>
+<option>通常魔法</option>
+<option>装備魔法</option>
+<option>フィールド魔法</option>
+<option>速攻魔法</option>
+<option>儀式魔法</option>
+<option>永続魔法</option>
+<option>通常罠</option>
+<option>カウンター罠</option>
+<option>永続罠</option>
+</select></p>
+<p>レベル/ランク/リンク <select name="levels1">
+<option>未選択</option>
+<option>レベル</option>
+<option>ランク</option>
+<option>リンク</option>
+</select><select name="levels2">
+<option>未選択</option>
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+</select></p>
+<p><label>ペンデュラムスケール </label><select name="Scale">
+<option>未選択</option>
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+</select></p>
+<p><label>ペンデュラム効果 </label><label><input name="P_E" type="text" /> </label></p>
+<p>種族 <label><select name="Race">
+<option>未選択</option>
+<option>魔法使い族</option>
+<option>ドラゴン族</option>
+<option>アンデット族</option>
+<option>戦士族</option>
+<option>獣戦士族</option>
+<option>獣族</option>
+<option>鳥獣族</option>
+<option>悪魔族</option>
+<option>天使族</option>
+<option>昆虫族</option>
+<option>恐竜族</option>
+<option>爬虫類族</option>
+<option>魚族</option>
+<option>海竜族</option>
+<option>水族</option>
+<option>炎族</option>
+<option>雷族</option>
+<option>岩石族</option>
+<option>植物族</option>
+<option>機械族</option>
+<option>サイキック族</option>
+<option>幻神獣族</option>
+<option>創造神族</option>
+<option>幻竜族</option>
+<option>サイバース族</option>
+</select></label></p>
+<p>その他項目 <label><input name="Other" type="text" /> </label></p>
+<p>攻撃力 <label><input name="ATK" type="text" /> </label></p>
+<p>守備力 <label><input name="DEF" type="text" /> </label></p>
+<p>攻守合計 <label><input name="soul" type="text" /> </label></p>
+<p>カードテキスト <label><input name="Card_Text" type="text" /> </label></p>
+<select name="Details">
+<option>カード名のみ表示</option>
+<option>詳細表示</option>
+</select>
+<p><input type="submit" value="検索" /></p>
 </form>
-</body>
-</html>
